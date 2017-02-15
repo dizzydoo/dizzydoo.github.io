@@ -36,7 +36,18 @@ header{
 
         header{
             width: 80%;
-        }   
+        }  
+
+        ul#main-nav{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 150px;
+    } 
+
+        li#nav-links a{
+            display: inline;
+        }
 
                             }
 
@@ -45,8 +56,27 @@ table#main-table{
     border-collapse: collapse;
     padding: 15px;
     border-spacing: 5px;
-}
+                }
 
 footer{
     text-align: center;
+    }
+
+ul#main-nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    }
+
+li#nav-links a {
+    display: block;
+    width: 100px;
+    padding: 6px 12px;
+    text-decoration: none;
+        }
+
+li#nav-links a:hover {
+    background-color: #555;
+    color: white;
 }
