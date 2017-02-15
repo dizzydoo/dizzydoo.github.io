@@ -1,0 +1,52 @@
+body{
+    /* background-color: #F2F2F2; */
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("../pattern/diamond_upholstery.png");
+    background-repeat: repeat;
+    }
+
+header{
+    width: 35%;
+    height: 140px;
+    margin: 0 auto;
+    background-color: #B3D4FC;
+    }
+
+#desc {
+    background-color: #95DBB4;
+    width: 80%;
+
+/* padding refers to the spacing around the text area */
+    padding: 5px 30px 5px 30px;
+    
+/* margin refers to spacing inside of the text area */
+    margin: 2px 10px 5px;
+        }
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%;
+        background-color: #FCC0C0;
+    }
+
+        table{
+        display: none;
+        }
+
+        header{
+            width: 80%;
+        }   
+
+                            }
+
+table#main-table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    border-spacing: 5px;
+}
+
+footer{
+    text-align: center;
+}

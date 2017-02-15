@@ -1,37 +1,61 @@
+<!DOCTYPE html>
+<!-- First webpage -->
+<!-- tinyurl.com/info1601t1 -->
 <html>
+    <head> 
+        <meta charset="UTF-8"> <!-- List charset for browser to render properly -->
+        <title>My Favorite Sites</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
 
-<head> <title> Test | Home </title>
-<link rel="stylesheet"
-	  type="text/css"
-	  href="bootstrap.css"
-	  href="https://fonts.googleapis.com/css?family=Overpass">
-</head>
+    <body>
+        <header>
+            <h1>My Favorite Sites</h1>
+            <h2><a href="http://github.com/dizzydoo">DizzyDoo</a></h2>
+        </header>
 
-	<body>
-	<a href="index.html">Home</a>&nbsp;<a href="about.html">About</a>
-		<hr></hr>
-	<div class="container">
-		<h1>Website Header</h1>
-		<h2>Subtitle</h2>
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+            pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+            </p>
 
-		<div class="row">
-			<div class="col-md-6">
-		<p class="gap"><span class="indent">Lorem</span> ipsum dolor sit amet</p>
-		</div>
-		
-		<div class="col-md-6">
-		<p><span class="indent">Lorem</span> ipsum dolor sit amet</p>
-			</div>
-		
-		
-		</div>
-		
-		<a href="W-RirlL.png">
+            <ul>
+                <li><a href="http://torrentfreak.com">TorrentFreak</a></li>
+                <li><a href="http://toontask.com">ToonTask</a></li>
+                <li><a href="http://github.com">GitHub</a></li>
+            </ul>
+        </article>
 
-			<img src="W-RirlL.png" width="50%"/>
+        <table id="main-table">
+            <caption>A short list of my favorite sites.</caption>
+            <thead>
+                <tr>
+                    <th>Category</th><th rowspan="2">Sites</th><th>Logo</th>
+                </tr>
+            </thead>
 
-		</a>
-		</div>
-	</body>
+            <tbody>
+                <tr>
+                    <td>News</td>
+                    <td><a href="http://torrentfreak.com" target="_blank" alt="TorrentFreak Website">TorrentFreak</a></td>
+                    <td><img src="tfk.jpg" alt="TorrentFreak" width=100px></td>
+                </tr>
+                <tr>
+                    <td>Communication</td>
+                    <td><a href="http://discord.gg" target="_blank" alt="Discord Website">Discord</a></td>
+                    <td><img src="discord.png" alt="Discord Logo" width=100px></td>
+                </tr>
+                <tr>
+                    <td>Technology</td>
+                    <td><a href="http://github.com" target="_blank">GitHub</a></td>
+                    <td><img src="github.png" alt="GitHub Logo" width=100px></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+
+    <footer> Background pattern used from <a href="http://subtlepatterns.com" target="_blank">Subtle Patterns</a></footer>
 
 </html>
