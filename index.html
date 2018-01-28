@@ -1,66 +1,84 @@
 <!DOCTYPE html>
 <!-- First webpage -->
 <!-- tinyurl.com/info1601t1 -->
-<html>
+<html lang="en">
     <head> 
-        <meta charset="UTF-8"> <!-- List charset for browser to render properly -->
-        <title>My Favorite Sites</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>DiZTEN | Official Site</title>
         <link rel="stylesheet" href="css/main.css">
+
+        <!-- GOOGLE WEBFONTS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+        <!-- <script src="js/main.js"> -->
     </head>
 
     <body>
-        <ul id="main-nav">
-  <li id="nav-links"><a href="index.html">Home</a></li>
-  <li id="nav-links"><a href="about.html">About</a></li>
-        </ul>
+        <div class="menu">
+            <button class="menubtn">Menu</button>
+            <div class="menu-dropdown">
+                <ul id="main-nav">
+                    <li id="nav-links"><a href="index.html">Home</a>
+                                       <a href="about.html">About</a>
+                                       <a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
 
         <header>
-            <h1>My Favorite Sites</h1>
-            <h2><a href="http://github.com/dizzydoo">DizzyDoo</a></h2>
+            <!--<h1>DizKonnekt's Den</h1>
+            <h2><a href="http://github.com/dizzydoo">DizzyDoo</a></h2>-->
+            <img src="img/dizten-logo.png" alt="Dizten Logo" width="400">
+            <a>Music Production | Mixing/Mastering | Web Design</a>
         </header>
 
-        <article>
+        <article id="main-text"> <h2>Bottom Text</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
             Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
             pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
             </p>
 
-            <ul>
-                <li><a href="http://torrentfreak.com">TorrentFreak</a></li>
-                <li><a href="http://toontask.com">ToonTask</a></li>
-                <li><a href="http://github.com">GitHub</a></li>
-            </ul>
+                <ul class="random-list">
+                    <li><a href="http://torrentfreak.com">TorrentFreak</a></li>
+                    <li><a href="http://toontask.com">ToonTask</a></li>
+                    <li><a href="http://github.com">GitHub</a></li>
+                </ul>
         </article>
 
         <table id="main-table">
             <caption>A short list of my favorite sites.</caption>
             <thead>
                 <tr>
-                    <th>Category</th><th rowspan="2">Sites</th><th>Logo</th>
+                    <th>Category</th><th>Sites</th><th>Logo</th>
                 </tr>
             </thead>
 
             <tbody>
                 <tr>
                     <td>News</td>
-                    <td><a href="http://torrentfreak.com" target="_blank" alt="TorrentFreak Website">TorrentFreak</a></td>
-                    <td><img src="tfk.jpg" alt="TorrentFreak" width=100px></td>
+                    <td><a href="http://torrentfreak.com" target="_blank">TorrentFreak</a></td>
+                    <td><img src="tfk.jpg" alt="TorrentFreak" width="100"></td>
                 </tr>
                 <tr>
                     <td>Communication</td>
-                    <td><a href="http://discord.gg" target="_blank" alt="Discord Website">Discord</a></td>
-                    <td><img src="discord.png" alt="Discord Logo" width=100px></td>
+                    <td><a href="http://discord.gg" target="_blank">Discord</a></td>
+                    <td><img src="discord.png" alt="Discord Logo" width="100"></td>
                 </tr>
                 <tr>
                     <td>Technology</td>
                     <td><a href="http://github.com" target="_blank">GitHub</a></td>
-                    <td><img src="github.png" alt="GitHub Logo" width=100px></td>
+                    <td><img src="github.png" alt="GitHub Logo" width="100"></td>
                 </tr>
             </tbody>
         </table>
 
-    </body>
+    <footer>
+        <h6>Background pattern used from <a href="https://www.toptal.com/designers/subtlepatterns/dust-scratches/" target="_blank">Subtle Patterns</a></h6>
+    </footer>
 
-    <footer> Background pattern used from <a href="http://subtlepatterns.com" target="_blank">Subtle Patterns</a></footer>
+    </body>
 
 </html>

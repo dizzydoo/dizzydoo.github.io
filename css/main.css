@@ -1,21 +1,29 @@
 body{
-    /* background-color: #F2F2F2; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+
     width: 90%;
-    margin: 0 auto;
-    background-image: url("../pattern/diamond_upholstery.png");
+    margin: none;
+    background-image: url("../img/triangular/triangular.png");
     background-repeat: repeat;
     }
 
 header{
-    width: 35%;
-    height: 140px;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    text-align: center;
+    max-width: 400px;
+    height: auto;
     margin: 0 auto;
-    background-color: #B3D4FC;
+    position: relative;
     }
 
-#desc {
-    background-color: #95DBB4;
-    width: 80%;
+#main-text {
+    /* background-color: #95DBB4; */
+    width: 100%;
+    align-content: center;
+    padding: 38px;
+    text-align: center;
 
 /* padding refers to the spacing around the text area */
     padding: 5px 30px 5px 30px;
@@ -24,7 +32,7 @@ header{
     margin: 2px 10px 5px;
         }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     body {
         width: 100%;
         background-color: #FCC0C0;
@@ -51,32 +59,71 @@ header{
 
                             }
 
-table#main-table{
+table#main-table, th, td {
+    table-layout: fixed;
+    width: 125px;
+    text-align: center;
     border: 1px solid black;
     border-collapse: collapse;
     padding: 15px;
     border-spacing: 5px;
-                }
+    }
+
+        th {
+            background-color: #868686;
+            color: black;
+        }
+
+        td:hover {
+            background-color: slategray;
+        }
 
 footer{
+    font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
+    font-style: italic;
     }
 
 ul#main-nav{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 150px;
+    width: 100%;
     }
 
 li#nav-links a {
-    display: block;
+    display: inline-flex;
     width: 100px;
     padding: 6px 12px;
     text-decoration: none;
-        }
+        } 
+
 
 li#nav-links a:hover {
-    background-color: #555;
+    background-color: #868686;
     color: white;
+    width: 100px
+}
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color:#B8B8BE;
+
+}
+
+.menu:hover .menu-dropdown {
+    display: block;
+}
+
+.menubtn {
+    padding: 15px;
+    font-size: 13px;
+    border:none;
+    background-color: #B3B3BA;
+    
+}
+
+.random-list {
+    list-style-type: square;
 }
