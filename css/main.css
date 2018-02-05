@@ -1,70 +1,16 @@
-<<<<<<< HEAD
 /* MOBILE CSS FORMATTING */
 /*-----------------------*/
 @media screen and (min-width:320px; max-width: 720px) {
-=======
-body{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-
-    width: 90%;
-    margin: 0px auto;
-    background-image: url("../img/triangular/triangular.png");
-    background-repeat: repeat;
-    }
-
-header{
-    font-family: 'VT323', monospace;
-    font-size: 20px;
-    text-align: center;
-    align-content: center;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 15px auto;
-    /* position: relative; */
-    }
-
-img#header-img {
-    display: block;
-    width: 400px;
-    margin: 0 auto;
-    height: auto;
-}
-
-article#main-text {
-    /* background-color: #95DBB4; */
-    width: 70%;
-    text-align: center;
-    align-content: center;
-    margin: 0 auto;
-    padding: 5px 15px 5px 15px;
-}
-
-/* padding refers to the spacing around the text area */
-    
-    
-/* margin refers to spacing inside of the text area */  
-
-@media screen and (max-width: 500px) {
->>>>>>> origin/master
     body {
         max-width: 90%;
         align-content: center;
         padding: 5px auto; }
-<<<<<<< HEAD
 
         table.main-table{
         max-width: 100%;
         display: block;
         margin: 0 auto; }
 
-=======
-
-        table .main-table{
-        display: block;
-        margin: 0 auto; }
-
->>>>>>> origin/master
         header {
             max-width: 100%;
         }
@@ -81,7 +27,6 @@ article#main-text {
 
         li#nav-links a{
             display: inline; }
-<<<<<<< HEAD
 
         form > input, textarea {
             max-width: 100%;
@@ -91,20 +36,6 @@ article#main-text {
             max-width: 100%;
         }
 
-=======
-
-}
-
-table .main-table, th, td {
-    width: 125px;
-    text-align: center;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 15px;
-    border-spacing: 5px;
-    margin: 0 auto;
-    }
->>>>>>> origin/master
 
 
 }
