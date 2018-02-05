@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+        <title>Contact - DiZTEN | Official Site</title>
+        <link rel="stylesheet" href="css/main.css">
+        <!-- <script src="js/main.js"> -->
+
+<!-- GOOGLE WEBFONTS -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+
 </head>
+
 <body>
+    <div class="menu">
+            <button class="menubtn">Menu</button>
+            
+           <div class="menu-dropdown">
+                <ul id="main-nav">
+                    <li id="nav-links"><a href="index.html">Home</a>
+                                       <a href="about.html">About</a>
+                                       <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+           </div>
+        </div>
+
+        <header>
+                <img src="img/dizten-logo.png" alt="Dizten Logo" width="400" id="header-img">
+                <a>Music Production | Mixing/Mastering | Web Design</a>
+        </header>
     
+    <article id="main-text"> <h2>Contact Form</h2>
+        <form action="index.html" method="post" onsubmit="alert('Information sent.')">
+            First name:<br>
+                <input type="text" name="contact-name" id="contact-name"><br><br>
+
+            Contact E-Mail:<br>
+                <input type="email" name="email" id="email"><br><br>
+
+            Service type:<br>
+                <select name="services" id="contact-services">
+                    <option value="prod">Production / Ghost Production</option>
+                    <option value="post-prod">Mixing / Mastering</option>
+                    <option value="web-dev">Web Development / Design</option>
+                </select> <br><br>
+            Description:<br>
+                <textarea name="message" id="desc-box">Please be detailed, include specific things requested, budget etc.</textarea>
+            <br><br><br>
+                <input type="submit" value="Submit">
+        </form>
+
+    </article>
+
 </body>
 </html>

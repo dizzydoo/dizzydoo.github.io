@@ -1,88 +1,47 @@
-body{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-
-    width: 90%;
-    margin: none;
-    background-image: url("../img/triangular/triangular.png");
-    background-repeat: repeat;
-    }
-
-header{
-    font-family: 'VT323', monospace;
-    font-size: 20px;
-    text-align: center;
-    max-width: 400px;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-    }
-
-#main-text {
-    /* background-color: #95DBB4; */
-    width: 100%;
-    align-content: center;
-    padding: 38px;
-    text-align: center;
-
-/* padding refers to the spacing around the text area */
-    padding: 5px 30px 5px 30px;
-    
-/* margin refers to spacing inside of the text area */
-    margin: 2px 10px 5px;
-        }
-
-@media screen and (max-width: 500px) {
+/* MOBILE CSS FORMATTING */
+/*-----------------------*/
+@media screen and (min-width:320px; max-width: 720px) {
     body {
-        width: 100%;
-        background-color: #FCC0C0;
-    }
+        max-width: 90%;
+        align-content: center;
+        padding: 5px auto; }
 
-        table{
-        display: none;
+        table.main-table{
+        max-width: 100%;
+        display: block;
+        margin: 0 auto; }
+
+        header {
+            max-width: 100%;
         }
 
-        header{
-            width: 80%;
-        }  
+        img#header-img {
+            max-width: 100%;
+            height: auto; }
 
         ul#main-nav{
             list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 150px;
-    } 
+            margin: 0 auto;
+            padding: 0 auto;
+            width: 70%; } 
 
         li#nav-links a{
-            display: inline;
+            display: inline; }
+
+        form > input, textarea {
+            max-width: 100%;
         }
 
-                            }
-
-table#main-table, th, td {
-    table-layout: fixed;
-    width: 125px;
-    text-align: center;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 15px;
-    border-spacing: 5px;
-    }
-
-        th {
-            background-color: #868686;
-            color: black;
+        div.about-content {
+            max-width: 100%;
         }
 
-        td:hover {
-            background-color: slategray;
-        }
 
-footer{
-    font-family: 'Roboto Condensed', sans-serif;
-    text-align: center;
-    font-style: italic;
-    }
+
+}
+
+/* DESKTOP CSS FORMATTING */
+/*-----------------------*/
 
 ul#main-nav{
     list-style-type: none;
@@ -92,7 +51,7 @@ ul#main-nav{
     }
 
 li#nav-links a {
-    display: inline-flex;
+    display: inline-table;
     width: 100px;
     padding: 6px 12px;
     text-decoration: none;
@@ -100,7 +59,7 @@ li#nav-links a {
 
 
 li#nav-links a:hover {
-    background-color: #868686;
+    background-color: rgba(86, 86, 86, 1);
     color: white;
     width: 100px
 }
@@ -108,7 +67,7 @@ li#nav-links a:hover {
     display: none;
     position: absolute;
     z-index: 1;
-    background-color:#B8B8BE;
+    background-color: rgba(184, 184, 190, 0.875);
 
 }
 
@@ -120,10 +79,95 @@ li#nav-links a:hover {
     padding: 15px;
     font-size: 13px;
     border:none;
-    background-color: #B3B3BA;
-    
+    background-color: rgba(179, 179, 186, 0.8); 
 }
 
 .random-list {
     list-style-type: square;
+}
+
+header{
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px auto;
+    position: relative;
+    }
+
+footer{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-style: italic;
+    }
+
+img#header-img {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    height: auto;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+
+    width: 90%;
+    margin: 0px auto;
+    background-image: url("../img/triangular/triangular.png");
+    background-repeat: repeat;
+    }
+
+article > h2 {
+    text-align: center;
+}
+
+article#main-text {
+    /* background-color: #95DBB4; */
+    width: 70%;
+    margin: 0 auto;
+    padding: 5px 15px 5px 15px;
+}
+
+div.about-content {
+    display: inline-flex;
+}
+  
+table.main-table {
+
+    text-align: center;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 0 auto;
+    }
+
+        th {
+            background-color: #868686;
+            color: black;
+        }
+
+        td:hover {
+            background-color: slategray;
+        }
+
+/* FORM FORMATTING */
+/*-----------------------*/
+
+form > #contact-name, #email {
+    width: 300px;
+}
+
+form > #desc-box {
+    width: 500px;
+    height: 220px
+}
+
+/* CHART CSS FORMATTING */
+/*-----------------------*/
+
+div.chart{
+    height: 350px;
+    width: 350px;
 }

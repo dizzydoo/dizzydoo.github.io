@@ -2,66 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>About - DiZTEN | Official Site</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="libs/chart.min.js"></script>
+
+    <!-- GOOGLE WEBFONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
 </head>
 <body>
-    <p>Introduction:	
-The	purpose	of	this	lab	is	to	continue	students’	introduction	to	HTML5	and	CSS,	while	encouraging	
-students	to	actively	engage	with	the	content.	The	important	concept	here	is	to	introduce	basic	concepts	
-that	will	serve	as	a	foundation	for	researching	and	implementing	more	complex	functionality.		
-NB:	Continuing	from	the	completed	Lab	1.	Also	this	lab	is	designed	for	you	to	utilize	resources	such	as	
-W3schools,	Tutorial	Point	and	MDN	as	resources	to	complete	these	activities.	
+        <div class="menu">
+                <button class="menubtn">Menu</button>
+                <div class="menu-dropdown">
+                    <ul id="main-nav">
+                        <li id="nav-links"><a href="index.html">Home</a>
+                                           <a href="about.html">About</a>
+                                           <a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <header>
+                    <img src="img/dizten-logo.png" alt="Dizten Logo" width="400" id="header-img">
+                    <a>Music Production | Mixing/Mastering | Web Design</a>
+            </header>
 
-<h2>Section	1</h2>	
+    <article id="main-text"> <h2>About</h2>
 
-1.  Apply	the	following	CSS	rules	to	the	body	element	within	the	external	main.css	file	found	in	the	
-CSS	folder	of	the	project.<br>	
-a.  Set	the	background	color	to	“#F2F2F2”	<br>
-b.  Set	the	width	to	90%;	<br>
-c.  Set	the	margin	to	0	auto	<br>
-<br>	
-2.  Apply	the	following	CSS	rules	to	the	“header	class”:	<br>
-a.  Set	the	width	35%	<br>
-b.  Set	the	margin	to	0	auto	<br>
-c.  Set	the	height	to	140px	<br>
-d.  Set	the	background	color	to	“#B3D4FC”	<br>
-<br>	
-3.  Set	the	id	of	the	paragraph	element	to	“desc”.	Apply	the	following	CSS	rules	to	the	id	created:	<br>
-a.  Set	the	background	color	to	“#95DBB4”	<br>
-b.  Set	the	width	to	80%;	<br>
-c.  Set	the	padding	to	5px	30px	5px	30px	<br>
-d.  Set	the	margin	to	2px	10px	5px	<br>
-e.  (Distinguish	the	difference	between	using	the	padding	and	margin)	<br>
-<br>	
-4.  Enhance	the	form	by	applying	the	following	CSS	rules:	<br>
-a.  To	the	form_area	class:	<br>
-i.  Background-color	of	#B5B5B5	<br>
-ii.  Width	300px	<br>
-iii.  All	round	padding	of	300px	<br>
-iv.  Right	aligned	text	<br>
-<br>	
-b.  To	the	input	fields	within	the	form_area	<br>
-i.  Float	elements	right	<br>
-ii.  Display	in	blocks	<br>
-iii.  Set	the	width	to	180px	iv.  Ensure	a	space	to	the	left	of	20px	wide	<br>
-<br>	
-5.  Using	media	queries	apply	the	following	rules	if	the	screen	is	less	than	800px	wide:	<br>
-a.  Set	body	width	to	100%	<br>
-b.  Change	the	background	color	to	#FCC0C0	<br>
-c.  Hide	all	tables		<br>
-d.  Set	the	header	width	to	80%	<br>
-<br>	
-On	Your	own:	<br>
-<br>	
-6.  Using	the	guide	found	on	w3schools.com	enhance	the	table.	Ensure	that	the	rules	defined	only	
-affect	the	table	existing	in	the	document.	(i.e.	the	rules	should	not	affect	another	table	in	the	
-webpage/site)	
-<br>		
-7.  Instead	of	using	a	color	for	the	background	using	a	pattern.	Patterns	can	be	found	at	
-subtlepatterns.com.	Ensure	to	use	background	repeat	for	both	x	and	y.	
-<br>	
-8.  Write	the	HTML	and	CSS	code	to	create	a	horizontal	menu	of	links.	Extend	the	example	to	
-convert	the	horizontal	list	to	a	vertical	menu	if	the	width	is	less	than	800px.	<br></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+        <div class="about-content">  
+            <div class="chart">
+                <canvas id="myChart" width="100" height="100"></canvas>
+                    <script>
+                    var ctx = document.getElementById("myChart").getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ["Work", "Play", "Dedication", "Quality"],
+                            datasets: [{
+                                label: 'Amount of effort involved',
+                                data: [7, 3, 10, 12],
+                                backgroundColor: [
+                                    'rgba(255, 123, 0, 0.7)',
+                                    'rgba(54, 162, 235, 0.7)',
+                                    'rgba(119, 213, 84, 0.7)',
+                                    'rgba(165, 46, 99, 0.7)'
+                                ],
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(153, 102, 255, 1)'
+                                ],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        beginAtZero:true
+                                    }
+                                }]
+                            }
+                        }
+                    });
+                    </script>
+            </div>
+            
+        <thead>
+            <th colspan="2">Social Media
+            </th>
+        </thead>
+            <table class="main-table">
+                
+                <tbody>
+                    <tr>
+                        <td><a href="https://soundcloud.com/diztenmusic" target="_blank">Soundcloud</a></td>
+                        <td><img src="https://w.soundcloud.com/icon/assets/images/orange_white_64-94fc761.png" alt="Soundcloud" width="64"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://facebook.com/diztenmusic" target="_blank">Facebook</a></td>
+                        <td><img src="https://en.facebookbrand.com/wp-content/uploads/2016/05/FB-fLogo-Blue-broadcast-2.png" alt="Facebook" width="64"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://github.com/dizzydoo" target="_blank">GitHub</a></td>
+                        <td><img src="img/github.png" alt="GitHub Logo" width="64"></td>
+                    </tr>
+                </tbody>
+        
+            </table>
+        
+    </div>
+
+    </article>
+
 </body>
 </html>
