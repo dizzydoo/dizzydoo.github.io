@@ -1,0 +1,23 @@
+﻿Revert "2018 Update for Web Tech 1 Assignment"
+
+This reverts commit bb0a7f0ee2248856b358069ff39670254a193fb9.
+
+# Conflicts:
+#	contact.html
+#	css/main.css
+#	index.html
+#	pattern/diamond_upholstery.png
+#	pattern/diamond_upholstery_@2X.png
+#	pattern/readme.txt
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# You are currently reverting commit bb0a7f0.
+#
+# Changes to be committed:
+#	new file:   .gitignore
+#
+
