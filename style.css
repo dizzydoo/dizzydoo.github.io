@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
+@media screen and (orientation: portrait) {
+    body {
+        margin: 0 auto;
+    }
+    
+}
+
+:root {
+    width: 100vw;
+    height: 100vh;
+}
+
 body {
+    /* margin: 25vh 10vh; */
     text-align: center;
     align-content: center;
     font-family: 'Share Tech Mono', monospace;
@@ -8,21 +21,27 @@ body {
     color: #35D600;
 }
 
-a:link, a:active, a:visited {
+a:link, a:visited, a:active {
     color: #35D600;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
-    text-underline-position: under;
+    filter: drop-shadow(1px 1px 7px #35D600);
+}
+
+#content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80vw;
+    transform: translate(-50%, -50%);
 }
 
 #main {
-    margin: 5rem;
-    max-width: 80vw;
     text-align: justify;
-    justify-content: left;
+    line-height: 1.3rem;
+    display: inline-block;
 }
 
 #main p {
@@ -41,9 +60,14 @@ a:hover {
 }
 
 #links * {
+    margin: 2rem 0;
     font-size: 1.6rem;
     transition: all 0.3s ease-out;
 }
+
+/* .contact-details:hover {
+    text-decoration: none;
+} */
 
 .contact-details:hover > i {
     transform: rotate(-12deg);
