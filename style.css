@@ -1,19 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-@media screen and (orientation: portrait) {
-    body {
-        margin: 0 auto;
-    }
-    
-}
-
 :root {
     width: 100vw;
     height: 100vh;
 }
 
 body {
-    /* margin: 25vh 10vh; */
     text-align: center;
     align-content: center;
     font-family: 'Share Tech Mono', monospace;
@@ -64,10 +56,6 @@ a:hover {
     font-size: 1.6rem;
     transition: all 0.3s ease-out;
 }
-
-/* .contact-details:hover {
-    text-decoration: none;
-} */
 
 .contact-details:hover > i {
     transform: rotate(-12deg);
